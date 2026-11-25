@@ -36,4 +36,23 @@
     "layout/archive",
     "layout/sidebar"
 ;
-
+/* UGA menu bar */
+.masthead,
+.masthead * {
+  background-color: #000 !important;
+}
+.masthead {
+  border-bottom: 4px solid #BA0C2F;
+}
+.masthead a,
+.masthead a:visited,
+.masthead button,
+.masthead i,
+.masthead svg {
+  color: #fff !important;
+  fill: #fff;
+}
+.masthead a:hover {
+  color: #fff !important;
+  border-bottom: 2px solid #BA0C2F;
+}
