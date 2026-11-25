@@ -37,38 +37,3 @@
     "layout/sidebar"
 ;
 
-/* UGA theme: red and black */
-a { color: #BA0C2F; }
-a:hover { color: #8A0922; }
-
-.masthead,
-.greedy-nav {
-  background-color: #000 !important;
-}
-.masthead {
-  border-bottom: 4px solid #BA0C2F;
-}
-.greedy-nav a,
-.masthead__menu-item a {
-  color: #fff !important;
-}
-.greedy-nav a:hover {
-  color: #fff !important;
-  border-bottom: 2px solid #BA0C2F;
-}
-
-.author__name,
-.page__title {
-  color: #BA0C2F;
-}
-.author__avatar img {
-  border: 3px solid #BA0C2F;
-}
-
-.page__footer {
-  background-color: #000;
-  color: #fff;
-}
-.page__footer a {
-  color: #fff;
-}
