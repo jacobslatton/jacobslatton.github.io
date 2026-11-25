@@ -18,4 +18,4 @@ I am a PhD student in Political Science and International Affairs at the Univers
 
 ## Learn More
 
-Read my [full bio](/bio/) or view my [CV](/files/Slatton_CV.pdf).
+Read my [full bio](/bio/) or view my [CV](/files/Jacob_Slatton_Academic_CV.pdf).
