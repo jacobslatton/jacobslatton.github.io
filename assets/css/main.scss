@@ -1,10 +1,6 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- */
-
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -62,35 +58,3 @@ html:not([data-theme="dark"]) .page__footer {
 html:not([data-theme="dark"]) .page__footer a {
   color: #fff;
 }
-
-/* UGA accents */
-.page__title,
-.author__name {
-  color: #BA0C2F;
-}
-
-.page__content h1,
-.page__content h2 {
-  border-bottom: 2px solid #BA0C2F;
-  padding-bottom: 0.2em;
-}
-
-.author__avatar img {
-  border: 3px solid #BA0C2F;
-}
-
-.btn,
-.btn--primary {
-  background-color: #BA0C2F !important;
-  color: #fff !important;
-}
-
-::selection {
-  background: #BA0C2F;
-  color: #fff;
-}
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar"
-;
