@@ -1,6 +1,10 @@
 ---
 ---
 
+/*
+ * This file controls what is imported from /_sass
+ */
+
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -25,7 +29,41 @@
 
     "layout/forms",
 
-    /* UGA accents */
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar"
+;
+
+/* UGA light mode: red header and footer */
+html:not([data-theme="dark"]) .masthead,
+html:not([data-theme="dark"]) .masthead * {
+  background-color: #BA0C2F !important;
+}
+html:not([data-theme="dark"]) .masthead {
+  border-bottom: 4px solid #000;
+}
+html:not([data-theme="dark"]) .masthead a,
+html:not([data-theme="dark"]) .masthead a:visited,
+html:not([data-theme="dark"]) .masthead button,
+html:not([data-theme="dark"]) .masthead i,
+html:not([data-theme="dark"]) .masthead svg {
+  color: #fff !important;
+  fill: #fff;
+}
+html:not([data-theme="dark"]) .masthead a:hover {
+  color: #fff !important;
+  border-bottom: 2px solid #fff;
+}
+
+html:not([data-theme="dark"]) .page__footer {
+  background-color: #BA0C2F;
+  color: #fff;
+}
+html:not([data-theme="dark"]) .page__footer a {
+  color: #fff;
+}
+
+/* UGA accents */
 .page__title,
 .author__name {
   color: #BA0C2F;
