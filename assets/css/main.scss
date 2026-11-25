@@ -9,50 +9,31 @@
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar"
-;
-/* UGA menu bar */
-.masthead,
-.masthead * {
-  background-color: #000 !important;
+   /* UGA light mode: red header and footer */
+html:not([data-theme="dark"]) .masthead,
+html:not([data-theme="dark"]) .masthead * {
+  background-color: #BA0C2F !important;
 }
-.masthead {
-  border-bottom: 4px solid #BA0C2F;
+html:not([data-theme="dark"]) .masthead {
+  border-bottom: 4px solid #000;
 }
-.masthead a,
-.masthead a:visited,
-.masthead button,
-.masthead i,
-.masthead svg {
+html:not([data-theme="dark"]) .masthead a,
+html:not([data-theme="dark"]) .masthead a:visited,
+html:not([data-theme="dark"]) .masthead button,
+html:not([data-theme="dark"]) .masthead i,
+html:not([data-theme="dark"]) .masthead svg {
   color: #fff !important;
   fill: #fff;
 }
-.masthead a:hover {
+html:not([data-theme="dark"]) .masthead a:hover {
   color: #fff !important;
-  border-bottom: 2px solid #BA0C2F;
+  border-bottom: 2px solid #fff;
+}
+
+html:not([data-theme="dark"]) .page__footer {
+  background-color: #BA0C2F;
+  color: #fff;
+}
+html:not([data-theme="dark"]) .page__footer a {
+  color: #fff;
 }
